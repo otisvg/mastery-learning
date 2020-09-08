@@ -3,11 +3,11 @@
 # If the user's name begins with 'S', the program shouts the user's name back at them.
 # If the user's name begins with any other letter, the program just says 'Hi, ' plus their name.
 
-puts "Hello, please enter your first name: "
+puts String.new("Hello, please enter your first name: ")
 
 name = gets.chomp
 
 if name.start_with?("S", "s")
   puts name.upcase
-else puts "Hi, #{name.capitalize!}"
+else puts "Hi, #{name.capitalize}"
 end

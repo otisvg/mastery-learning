@@ -5,9 +5,9 @@
 
 puts String.new("Hello, please enter your first name: ")
 
-name = gets.chomp
+name = gets.chomp.capitalize
 
-if name.start_with?("S", "s")
+if name.start_with?("S")
   puts name.upcase
-else puts "Hi, #{name.capitalize}"
+else puts "Hi, #{name}"
 end
